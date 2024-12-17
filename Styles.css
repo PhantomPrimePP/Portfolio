@@ -1,0 +1,19 @@
+.image-with-button {
+    position: relative;
+    display: inline-block; /* Ensures the button stays aligned with the image */
+}
+
+.image-with-button img {
+    width: 100%; /* Ensures the image is responsive */
+    display: block;
+}
+
+.image-with-button .overlay-button {
+    position: absolute;
+    top: 50%; /* Vertically center the button */
+    left: 50%; /* Horizontally center the button */
+    transform: translate(-50%, -50%); /* Adjust the button's position */
+    text-align: center;
+    text-decoration: none;
+    z-index: 2; /* Ensures the button is above the image */
+}
